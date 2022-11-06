@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
+@import url(../layout/container.css);
+@import url(../layout/footer.css);
+@import url(../layout/header.css);
+@import url(../module/kontaktiy.css);
+@import url(../module/nashi_raboti.css);
+@import url(../module/uslugi.css);
+@import url(../theme/button.css);
+@import url(../theme/title.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea:focus{
+    outline: none;
+}
