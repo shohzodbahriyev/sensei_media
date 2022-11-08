@@ -56,3 +56,38 @@
 .uslugi {
   width: 25%;
 }
+
+
+@media screen and (max-width:850px){
+  .container{
+    width: 100%;
+  }
+  .footer_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .footer_container .politika{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .footer_container .informatsiya{
+    width: 50%;
+  }
+  .footer_container .uslugi{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .container{
+    width: 100%;
+  }
+  .footer_container .informatsiya{
+    width: 100%;
+  }
+  .footer_container .uslugi{
+    width: 100%;
+  }
+}

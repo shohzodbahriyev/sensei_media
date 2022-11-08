@@ -244,10 +244,9 @@ main {
 .order_container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 
-.konsultatsiya {
+.order_container .konsultatsiya {
   width: 52%;
   display: flex;
   flex-direction: column;
@@ -324,21 +323,26 @@ main {
   border-radius: 9px;
   margin-top: 17px;
 }
-
-.order_container img {
-  width: 48%;
+.order_container .sprava {
+  /* width: 48%; */
+  display: flex;
+  justify-content: center;
 }
 
-.block {
-  width: 100%;
+.order_container .sprava img {
+  /* width:500px;
+  height: 500px; */
+  /* object-fit: cover; */
+}
+
+#block {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
-  text-align: right;
-  margin-top: 86px;
-  margin-right: 200px;
-}
+  display: flex;
+  justify-content: flex-end;
+} 
 
 /* ---------- SECTION5 ---------- */
 
@@ -430,5 +434,243 @@ body > p {
   font-size: 14px;
   line-height: 36px;
   color: #ffffff;
-  background: #2D2D2D;
+  background: #2d2d2d;
+}
+
+/* --------- RESPONSIVE ----------- */
+
+@media screen and (max-width: 1120px) {
+  .container {
+    width: 100%;
+  }
+  .tariffs hr {
+    height: 136px;
+  }
+  .inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inputs input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .result{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .result .information{
+    width: 50%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 100%;
+  }
+  .hero_container .hero_image {
+    width: 60%;
+  }
+  .hero_image img {
+    width: 100%;
+  }
+  .hero_text {
+    width: 40%;
+  }
+  .links {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .tariffs {
+    width: 100%;
+    display: flex;
+    padding-top: 33px;
+    flex-wrap: wrap;
+  }
+  .tariffs hr {
+    display: none;
+  }
+
+  .tariffs .tariff {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .order_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .order_container .konsultatsiya {
+    width: 100%;
+    display: flex;
+  }
+  .order_container .sparava{
+    width: 100%;
+  }
+  .order_container .sprava img{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    width: 100%;
+  }
+  .nashi_uslugi h1 {
+    margin-bottom: 21px;
+  }
+  .services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .services .parent {
+    width: 23%;
+    margin-top: 20px;
+  }
+  .result .information{
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    width: 100%;
+  }
+  .tariffs .tariff {
+    width: 50%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .hero {
+    width: 100%;
+  }
+  .hero_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero_image {
+    width: 100%;
+  }
+  .hero .hero_image img {
+    width: 100%;
+  }
+  .hero .hero_text {
+    width: 100%;
+  }
+  .hero .hero_text h1 {
+    width: 100%;
+  }
+  .hero .links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .services {
+    width: 100%;
+  }
+  .services .parent {
+    width: 30%;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:680px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .services {
+    width: 100%;
+  }
+  .services .parent {
+    width: 48%;
+    margin-top: 20px;
+  }
+  .statistics{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .statistics .common{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .container {
+    width: 100%;
+  }
+  .hero_container {
+    padding: 103px 15px 0px;
+  }
+  .tariffs_box {
+    margin-top: 30px;
+  }
+  .tariffs .tariff {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tariffs_box h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .hero_text h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .services {
+    width: 100%;
+  }
+  .services .parent {
+    width: 80%;
+    margin-top: 20px;
+  }
+  .services br {
+    display: none;
+  }
+  .nashi_uslugi h1 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .konsultatsiya h1{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
+  #block{
+    line-height: 32px;
+  }
+  .nashi_raboti h1{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+  }
 }

@@ -35,3 +35,30 @@
   border-radius: 9px;
   padding: 14px 33px 14px 42px;
 }
+
+.header_container img:nth-child(4){
+  display: none;
+}
+
+/* ----------- RESPONSIVE ---------- */
+
+@media screen and (max-width:950px){
+  .container{
+    width: 100%;
+  }
+  .header{
+    max-height: 70px;
+  }
+  .header_container a:nth-child(1) img{
+    max-width: 80%;
+  }
+  .nav_list{
+    display: none;
+  }
+  .header_container .order{
+    display: none;
+  }
+  .header_container img:nth-child(4){
+    display: block;
+  }
+}
