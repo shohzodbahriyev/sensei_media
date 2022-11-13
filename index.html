@@ -11,16 +11,45 @@
     <header class="header">
       <div class="container header_container">
         <a href="./index.html"><img src="./images/Лого.png" alt="" /></a>
-        <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Услуги</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Наши работы</a></li>
-          <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
-        </ul>
-        <a href="#" class="btn order">Заказать звонок</a>
-        <img src="./images/icons8-menu-48.png" alt="">
+        <div id="nav_list">
+          <button class="navbar_close" onclick="closeNavbar()">
+            <svg
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              width="32px"
+              height="32px"
+            >
+              <path
+                d="M 4.1113281 1.2832031 L 1.2832031 4.1113281 L 5.171875 8 L 1.2832031 11.888672 L 4.1113281 14.716797 L 8 10.828125 L 11.888672 14.716797 L 14.716797 11.888672 L 10.828125 8 L 14.716797 4.1113281 L 11.888672 1.2832031 L 8 5.171875 L 4.1113281 1.2832031 z"
+              />
+            </svg>
+          </button>
+          <ul class="nav_list">
+            <li class="nav_item"><a href="#" class="nav_link">Главная</a></li>
+            <li class="nav_item"><a href="#" class="nav_link">Услуги</a></li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">Наши работы</a>
+            </li>
+            <li class="nav_item"><a href="#" class="nav_link">Контакты</a></li>
+          </ul>
+          <a href="#" class="btn order">Заказать звонок</a>
+        </div>
+        <button class="hamburger" onclick="openNavbar()">
+          <img src="./images/icons8-menu-48.png" alt="" />
+        </button>
       </div>
     </header>
+
+    <script>
+      function openNavbar() {
+        document.getElementById("nav_list").style.left = "0";
+      }
+      function closeNavbar() {
+        document.getElementById("nav_list").style.left = "-100%";
+      }
+    </script>
+
     <main>
       <section class="hero">
         <div class="container hero_container">
@@ -69,7 +98,6 @@
           </div>
         </div>
       </section>
-
 
       <section class="nashi_uslugi">
         <div class="container">
